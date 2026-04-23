@@ -1,0 +1,159 @@
+1. Print “Hello”
+   echo "Hello"
+
+2. Print your name
+   echo "Febiya"
+
+3. Print your university name
+   echo "Karunya Institute of Technology and Sciences"
+
+4. Display welcome message
+   echo "Welcome to Shell Scripting"
+
+5. Add two numbers
+   a=10
+   b=5
+   echo "Sum = $((a+b))"
+
+6. Subtract two numbers
+   a=10
+   b=5
+   echo "Difference = $((a-b))"
+
+7. Multiply two numbers
+   a=10
+   b=5
+   echo "Product = $((a*b))"
+
+8. Divide two numbers
+   a=10
+   b=5
+   echo "Division = $((a/b))"
+
+9. Square of a number
+   n=4
+   echo "Square = $((n*n))"
+
+10. Cube of a number
+    n=3
+    echo "Cube = $((n*n*n))"
+
+11. Even or Odd
+    n=7
+    if [ $((n%2)) -eq 0 ]
+    then
+        echo "Even"
+    else
+        echo "Odd"
+    fi
+
+12. Positive or Negative
+    n=-5
+    if [ $n -gt 0 ]
+    then
+        echo "Positive"
+    else
+        echo "Negative"
+    fi
+
+13. Largest of two numbers
+    a=10
+    b=20
+    if [ $a -gt $b ]
+    then
+        echo "$a is largest"
+    else
+        echo "$b is largest"
+    fi
+
+14. Smallest of two numbers
+    a=10
+    b=20
+    if [ $a -lt $b ]
+    then
+        echo "$a is smallest"
+    else
+        echo "$b is smallest"
+    fi
+
+15. Print 1 to 10
+    for i in {1..10}
+    do
+        echo $i
+    done
+
+16. Print 10 to 1
+    for ((i=10;i>=1;i--))
+    do
+        echo $i
+    done
+
+17. Multiplication table
+    n=5
+    for i in {1..10}
+    do
+        echo "$n x $i = $((n*i))"
+    done
+
+18. Sum from 1 to N
+    n=5
+    sum=0
+    for ((i=1;i<=n;i++))
+    do
+        sum=$((sum+i))
+    done
+    echo "Sum = $sum"
+
+19. Factorial
+    n=5
+    fact=1
+    for ((i=1;i<=n;i++))
+    do
+        fact=$((fact*i))
+    done
+    echo "Factorial = $fact"
+
+20. Current date
+    date
+
+21. Current time
+    date +"%T"
+
+22. Display username
+    whoami
+
+23. Present working directory
+    pwd
+
+24. List all files
+    ls
+
+25. Count number of files
+    ls | wc -l
+
+26. Check if file exists
+    file="test.txt"
+    if [ -f $file ]
+    then
+        echo "File exists"
+    else
+        echo "File not found"
+    fi
+
+27. Create a new file
+    touch newfile.txt
+
+28. Delete a file
+    rm newfile.txt
+
+29. Display file contents
+    cat filename.txt
+
+30. Check number is positive
+    n=5
+    if [ $n -gt 0 ]
+    then
+        echo "Positive"
+    else
+        echo "Not Positive"
+    fi
