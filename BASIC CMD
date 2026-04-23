@@ -1,0 +1,83 @@
+1. Display present working directory
+   pwd
+
+2. List all files including hidden files
+   ls -a
+
+3. Create a directory
+   mkdir dirname
+
+4. Create an empty file
+   touch filename
+
+5. Copy a file
+   cp sourcefile destination
+
+6. Rename a file
+   mv oldname newname
+
+7. Delete a file
+   rm filename
+
+8. Display file contents
+   cat filename
+
+9. Count number of files in a directory
+   ls | wc -l
+
+10. Display current date and time
+    date
+
+11. Display username
+    whoami
+
+12. Display calendar
+    cal
+
+13. Search for a file
+    find /path -name filename
+
+14. List files with details
+    ls -l
+
+15. Change directory
+    cd directoryname
+
+16. Go to home directory
+    cd ~
+
+17. Go to parent directory
+    cd ..
+
+18. Create/edit a file
+    vi filename   (or nano filename)
+
+19. Remove a directory
+    rmdir dirname
+
+20. Display first few lines of a file
+    head filename
+
+21. Display last few lines of a file
+    tail filename
+
+22. Count lines in a file
+    wc -l filename
+
+23. Sort file contents
+    sort filename
+
+24. Compare two files
+    diff file1 file2
+
+25. Display file size
+    du -h filename   (or ls -lh)
+
+26. Create multiple directories
+    mkdir dir1 dir2 dir3
+
+27. Remove a file forcefully
+    rm -f filename
+
+28. Echo a message
+    echo "your message"
