@@ -1,0 +1,21 @@
+shell procedure:
+
+
+nano file.sh
+#!/bin/bash
+cmd
+ctrl+o
+enter
+ctrl+x
+chmod +x file.sh
+./file.sh
+
+
+c program procedure
+
+nano file.c
+ctrl+o
+enter
+ctrl+x
+gcc file.c -o file
+./file
