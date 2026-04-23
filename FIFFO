@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int f,p,a[20],fr[10],i,j,k=0,hit,fault=0;
+
+    scanf("%d%d",&f,&p);
+    for(i=0;i<p;i++) scanf("%d",&a[i]);
+
+    for(i=0;i<f;i++) fr[i]=-1;
+
+    for(i=0;i<p;i++){
+        hit=0;
+        for(j=0;j<f;j++)
+            if(fr[j]==a[i]) hit=1;
+
+        if(!hit){
+            fr[k]=a[i];
+            k=(k+1)%f;
+            fault++;
+        }
+    }
+    printf("Faults=%d",fault);
+}
